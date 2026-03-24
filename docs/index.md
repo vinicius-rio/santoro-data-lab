@@ -1,89 +1,193 @@
-## **📊 Sobre este guia**
+# 🧠 Ciência de Dados para Analistas
 
-Bem-vindo! 👋
+## 📊 Sobre este guia
 
-Este é um guia prático para quem está iniciando a jornada como Analista de Dados e quer construir uma base sólida, organizada e aplicável ao dia a dia profissional.
+Este guia foi criado para analistas de dados que querem evoluir para uma atuação mais próxima de **ciência de dados**, sem sair da realidade do dia a dia profissional.
 
-Aqui você vai estudar os fundamentos essenciais que realmente aparecem no trabalho: SQL e AWS, com foco em análise de dados, consultas eficientes e visualização de informações para tomada de decisão.
+O foco não é formar cientistas acadêmicos, mas sim desenvolver **capacidade analítica avançada**, permitindo:
 
-O conteúdo foi pensado para evitar excesso de teoria e priorizar o entendimento prático:
-o que é, por que existe e como usar cada conceito no mundo real. 🚀
+- Resolver problemas mais complexos  
+- Antecipar comportamentos (e não apenas descrever)  
+- Tomar decisões orientadas por dados de forma mais sofisticada  
+- Gerar mais impacto no negócio  
 
-## **🎯 Objetivo**
+Aqui, ciência de dados é tratada como uma **extensão natural da análise de dados**, e não como uma ruptura.
+
+---
+
+## 🎯 Objetivo
 
 !!! tip "Objetivo principal"
 
-    **Guiar um analista de dados iniciante desde os fundamentos até a prática profissional, criando uma base clara, reutilizável e alinhada ao mercado.**
+    **Ensinar o essencial de ciência de dados para que um analista consiga aplicar no dia a dia — com foco em problema de negócio, tomada de decisão e geração de valor.**
 
-Ao final deste guia, você será capaz de:
+Ao longo deste material, você irá desenvolver a capacidade de:
 
-- Ler e escrever queries SQL com confiança
-- Entender e criar estruturas de dados na AWS
-- Construir análises e visões no QuickSight
-- Saber quais certificações AWS fazem sentido para o início da carreira
+- Traduzir problemas de negócio em problemas analíticos  
+- Identificar quando usar análise descritiva, preditiva ou prescritiva  
+- Definir corretamente targets e métricas  
+- Avaliar modelos com senso crítico (não apenas métricas técnicas)  
+- Conectar dados → modelo → decisão → impacto  
+- Pensar como um cientista de dados, mesmo sem atuar formalmente como um  
 
-## **🧠 Conteúdos abordados** 
+---
 
-### **🗄️ SQL — Fundamentos e Análise** 
+## 🧠 O que você vai aprender
 
-Você aprenderá SQL de forma progressiva, começando do básico até conceitos mais avançados:
+Este guia não segue uma linha tradicional de "algoritmos primeiro".
 
-- Conceitos fundamentais de bancos de dados
+Ele segue o fluxo real do mercado:
 
-- SELECT, WHERE, ORDER BY
+> **Problema → Dados → Análise → Modelo → Decisão**
 
-- JOINs e seus diferentes tipos
+---
 
-- Agrupamentos com GROUP BY
+## 🔄 Metodologia: CRISP-DM
 
-- Funções agregadas
+A base de todo o material é o CRISP-DM, a metodologia mais utilizada em projetos de dados.
 
-- Funções de janela (Window Functions)
+Você aprenderá a estruturar problemas seguindo as etapas:
 
-- Boas práticas de escrita e leitura de queries
+1. Entendimento do negócio  
+2. Entendimento dos dados  
+3. Preparação dos dados  
+4. Modelagem  
+5. Avaliação  
+6. Aplicação (deploy/uso real)  
 
-### **☁️ AWS para Analistas de Dados**
+!!! note "Ponto crítico"
 
-Aqui o foco é no uso prático das ferramentas mais comuns no dia a dia:
+    A maior parte do valor não está na modelagem — está na definição correta do problema.
 
-- Criação e consulta de tabelas no AWS Athena
+---
 
-- Organização e leitura eficiente de dados
+## 🎯 Problema de negócio e target
 
-- Criação de datasets no Amazon QuickSight
+Você aprenderá a transformar demandas vagas em problemas estruturados:
 
-- Construção de visões e análises no QuickSight
+Exemplo:
 
-- Entendimento do fluxo completo:
+- ❌ "Quero um modelo de churn"  
+- ✅ "Quais clientes têm alta probabilidade de cancelar nos próximos 30 dias?"
 
-Dados → Athena → Dataset → Visualização
+Também será abordado:
 
-### **🎓 Certificações AWS**
+- Definição correta de target  
+- Armadilhas comuns (leakage, proxies ruins, viés)  
+- Como estruturar problemas de forma mensurável  
 
-Para quem deseja validar conhecimento e crescer na carreira:
+---
 
-- Certificações AWS recomendadas para analistas de dados iniciantes
+## 📊 Tipos de problema em ciência de dados
 
-- Ordem ideal de estudo
+Nem todo problema precisa de machine learning.
 
-- O que estudar para a prova vs. o que é essencial no trabalho
+Você aprenderá a diferenciar:
 
-- Estratégias para estudar com foco e eficiência
+### 📌 Descritivo
+- O que aconteceu?  
+- Identificação de padrões  
 
-!!! note "Importante"
+### 🔮 Preditivo
+- O que vai acontecer?  
+- Modelos de previsão  
 
-    **Certificação não substitui experiência, mas ajuda a organizar o estudo e abrir portas no início da carreira.**
+### 🎯 Prescritivo
+- O que devemos fazer?  
+- Recomendação de ações  
 
-## **📌 Como utilizar este guia**
+!!! tip "Insight"
 
-- Estude na ordem sugerida
+    Muitos problemas são resolvidos sem modelo — apenas com boa análise.
 
-- Use como material de revisão
+---
 
-- Consulte como referência no trabalho
+## 📏 Métricas: como avaliar corretamente
 
-- Volte sempre que surgir uma dúvida
+Uma das maiores diferenças entre analista e cientista está aqui.
 
-Este guia foi feito para ser **consultado, reutilizado e evoluído junto com você.**
+Você aprenderá a interpretar métricas além do superficial:
 
-Boa jornada no mundo dos dados! 📈
+### Classificação
+- Precision  
+- Recall  
+- F1-score  
+- AUC  
+
+### Regressão
+- MAE  
+- RMSE  
+- MAPE  
+
+### Negócio
+- ROI  
+- Expected Value  
+- Custo do erro  
+
+!!! warning "Erro comum"
+
+    Otimizar métricas técnicas sem considerar impacto no negócio.
+
+---
+
+## 🏗️ Construção de soluções de dados
+
+Você verá como uma solução realmente funciona na prática:
+
+1. Entendimento da dor  
+2. Formulação de hipóteses  
+3. Exploração de dados (EDA)  
+4. Feature engineering  
+5. Modelagem (começando simples)  
+6. Avaliação técnica e de negócio  
+7. Uso real (decisão, dashboard, sistema)  
+
+---
+
+## 🧠 Mentalidade de cientista de dados
+
+Mais importante do que ferramentas, você irá desenvolver:
+
+- Pensamento orientado a hipóteses  
+- Capacidade de questionamento  
+- Leitura crítica de resultados  
+- Clareza na comunicação de insights  
+- Foco em impacto, não apenas análise  
+
+---
+
+## 📌 Como usar este guia
+
+Para melhor aproveitamento:
+
+- Siga a ordem proposta (há progressão lógica)  
+- Foque em entender o *porquê*, não apenas o *como*  
+- Relacione com problemas reais do seu trabalho  
+- Volte ao material com frequência  
+
+---
+
+## 🚀 Filosofia do material
+
+Este guia se baseia em três princípios:
+
+### 1. Problema antes da solução  
+Modelos não resolvem problemas mal definidos.
+
+### 2. Simplicidade antes da complexidade  
+Comece simples. Complexidade só quando necessário.
+
+### 3. Negócio acima de tudo  
+O objetivo não é prever melhor — é **decidir melhor**.
+
+---
+
+## 📈 Conclusão
+
+Este material não é sobre virar cientista de dados.
+
+É sobre se tornar um **analista mais completo, mais estratégico e mais valioso**.
+
+> Ciência de dados, no contexto real, é a evolução natural da análise.
+
+Boa jornada 🚀
