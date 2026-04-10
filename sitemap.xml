@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://vinicius-rio.github.io/santoro-data-lab/</loc>
+         <lastmod>2026-04-10</lastmod>
+    </url>
+    <url>
+         <loc>https://vinicius-rio.github.io/santoro-data-lab/001_crisp_dm/</loc>
+         <lastmod>2026-04-10</lastmod>
+    </url>
+    <url>
+         <loc>https://vinicius-rio.github.io/santoro-data-lab/002_estatistica_inferencial_nps/</loc>
+         <lastmod>2026-04-10</lastmod>
+    </url>
+    <url>
+         <loc>https://vinicius-rio.github.io/santoro-data-lab/003_framework_amostragem/</loc>
+         <lastmod>2026-04-10</lastmod>
+    </url>
+    <url>
+         <loc>https://vinicius-rio.github.io/santoro-data-lab/004_testes_de_hipotese/</loc>
+         <lastmod>2026-04-10</lastmod>
+    </url>
+    <url>
+         <loc>https://vinicius-rio.github.io/santoro-data-lab/005_ab_testing/</loc>
+         <lastmod>2026-04-10</lastmod>
+    </url>
+</urlset>
