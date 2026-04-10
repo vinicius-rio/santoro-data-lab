@@ -1,59 +1,80 @@
-site_name: Santoro Data
-site_url: https://sitename.example
+site_name: ViniRio Data Lab
+site_description: Documentação pública dos meus estudos e aplicações práticas em ciência de dados
+site_url: https://vinicius-rio.github.io/santoro-data-lab
+
 theme:
   name: material
-  favicon: assets/favicon.ico
+  language: pt-BR
   features:
-    - navigation.footer
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
     - content.code.copy
-    - content.code.select
+    - toc.follow
   palette:
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark mode
-      primary: black
-      accent: indigo
-
-    # Light Mode
     - scheme: default
+      primary: black
+      accent: blue
       toggle:
         icon: material/weather-night
-        name: Light mode
+        name: Alternar para modo escuro
+    - scheme: slate
       primary: black
-      accent: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Alternar para modo claro
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      include_source: true
+      execute: false
+      ignore_h1_titles: false
+      allow_errors: false
+      show_input: true
+      no_input: false
+      remove_tag_config:
+        remove_cell_tags:
+          - remove-cell
+        remove_all_outputs_tags:
+          - remove-output
+        remove_input_tags:
+          - remove-input
+        remove_single_output_tags:
+          - remove-single-output
 
 markdown_extensions:
-  - pymdownx.arithmatex:
-      generic: true
+  - admonition
   - attr_list
-  - md_in_html
-  - pymdownx.blocks.caption
+  - footnotes
+  - tables
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - admonition
-  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
 
-  extra_javascript:
-  - javascripts/katex.js
-  - https://unpkg.com/katex@0/dist/katex.min.js
-  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
-
-copyright: Copyright &copy; 2024 Vinicius Naziozeno Santoro do Rio
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-  - styles/custom.css  # Referência para o seu arquivo custom.css
-  - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/extra.css
+
+nav:
+  - Início: index.md
+  - 01. CRISP-DM e Métricas Utilizadas: 001_crisp_dm.md
+  - 02. Estatística Inferencial Aplicada a NPS: 002_estatistica_inferencial_nps.ipynb
+  - 03. Framework de Amostragem: 003_framework_amostragem.md
+  - 04. Testes de Hipótese: 004_testes_de_hipotese.ipynb
+  - 05. A/B Testing: 005_ab_testing.ipynb
