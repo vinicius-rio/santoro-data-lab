@@ -1,20 +1,14 @@
-/* Ajustes leves para notebooks longos */
-.jp-Cell {
-  margin-bottom: 1rem;
-}
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true,
+    processEnvironments: true
+  }
+};
 
-.jp-OutputArea {
-  overflow-x: auto;
-}
-
-.jp-RenderedHTMLCommon table {
-  display: table;
-  width: auto;
-}
-
-/* Deixa gráficos mais confortáveis em telas grandes */
-.md-content img,
-.jp-RenderedImage img {
-  max-width: 100%;
-  height: auto;
-}
+document$.subscribe(() => {
+  if (window.MathJax?.typesetPromise) {
+    MathJax.typesetPromise();
+  }
+});

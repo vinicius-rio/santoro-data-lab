@@ -12,7 +12,7 @@
   width: auto;
 }
 
-/* Deixa gráficos mais confortáveis em telas grandes */
+/* Deixa gráficos mais confortáveis */
 .md-content img,
 .jp-RenderedImage img {
   max-width: 100%;
