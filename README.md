@@ -27,4 +27,4 @@ python3.12 -m mkdocs serve
 
 - Link do site:
 
-https://vinicius-rio.github.io/santoro-data-lab/
+https://vinicius-rio.github.io/data-lab/
